@@ -6,8 +6,8 @@ function main() {
 
     var gl = getWebGLContext(canvas);
 
-    loadShaderFile(gl, 'draw-rotating-triangle.vert', gl.VERTEX_SHADER, start);
-    loadShaderFile(gl, 'draw-rotating-triangle.frag', gl.FRAGMENT_SHADER, start);
+    loadShaderFile(gl, 'draw-multi-points.vert', gl.VERTEX_SHADER, start);
+    loadShaderFile(gl, 'draw-multi-points.frag', gl.FRAGMENT_SHADER, start);
 }
 
 function start(gl) {
