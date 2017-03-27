@@ -31,7 +31,7 @@ function click(evt, gl, canvas, a_Position, u_FragColor){
     var rect = evt.target.getBoundingClientRect();
     x = ((x - rect.left) - canvas.height/2)/(canvas.height/2);
     y = (canvas.width/2 - (y - rect.top))/(canvas.width/2);
-    points.push([x, y, [1, 1, 1, 1.0]]);
+    points.push([x, y, [Math.random(), Math.random(), Math.random(), 1.0]]);
 
     gl.clear(gl.COLOR_BUFFER_BIT);
     var len = points.length;
